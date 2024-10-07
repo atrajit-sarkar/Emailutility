@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Request</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            font-family: 'Poppins', sans-serif;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 30px auto;
+            background: url('https://raw.githubusercontent.com/gongobongofounder/Server/refs/heads/main/deviDurga.webp') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            color: white; /* White text for better contrast */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Soft shadow for readability */
+        }
+        .email-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+            z-index: 1;
+        }
+        .header, .content, .footer {
+            position: relative;
+            z-index: 2; /* Keep content above overlay */
+        }
+        .header {
+            background-color: rgba(255, 111, 97, 0.8); /* Semi-transparent background for the header */
+            color: #fff;
+            text-align: center;
+            padding: 25px;
+            font-family: 'Dancing Script', cursive;
+            font-size: 36px;
+        }
+        .content {
+            padding: 25px;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .content p {
+            margin: 20px 0;
+        }
+        .contact-info {
+            font-weight: 500;
+            color: #ffeb3b; /* Bright color for emphasis */
+        }
+        .footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 12px;
+            color: #ccc;
+            background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent footer background */
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .footer a {
+            color: #ff6f61;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .email-container {
+            animation: slideIn 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            Leave Request for Durga Puja
+        </div>
+        <div class="content">
+            <p>Dear Warden,</p>
+            <p>
+                I am writing to formally request a leave of absence for my child, <strong>Hrisav Sarkar</strong>, 
+                from the Hostel to attend the Durga Puja festivities.
+            </p>
+            <p>
+                Hrisav Sarkar is a resident of <strong>607B</strong>. I would like for them to be away from the hostel from 
+                <strong>8/10/24 to 13/10/24</strong>.
+            </p>
+            <p>
+                Please be assured that I have made necessary arrangements for my child's safety and well-being during their absence.
+            </p>
+            <p>Thank you for your understanding and consideration.</p>
+            <p class="contact-info">
+                Sincerely,<br>
+                Sailendra Nath Sarkar<br>
+                9126326808
+            </p>
+        </div>
+        <div class="footer">
+            <p>For any inquiries, please reply to this email or visit our website @
+                <a href="https://sites.google.com/alumni.iitd.ac.in/gongo-bongo/home?authuser=6">GONGOBONGO</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
